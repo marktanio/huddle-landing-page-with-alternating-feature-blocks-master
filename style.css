@@ -153,3 +153,61 @@ h4{
 .btm-box > :first-child{
     margin-right:calc(1100px - 500px - 400px);
 }
+
+aside {
+    max-width: 750px;      
+    width: 100%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: -230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+aside > button{
+    background-color: var(--pink);
+    border-radius: 50px;
+    color:white;
+    width:300px;
+    height:50px;
+    border: none;
+    font-weight:600;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    margin:20px 0;
+}
+
+footer{
+    background-color: var(--veryDarkCyan);
+    position:relative;
+    width:100%;
+    display:flex;
+    color:white;
+    flex-direction: column;
+    min-height:500px;
+    justify-content: center;
+    padding:20px;
+}
+
+footer > figure > img{
+    filter: invert(1) brightness(5);
+}
+
+.soc-med{
+    display:flex;
+}
+.soc-med img{
+    width:50px;
+    height:auto;
+    filter: invert(1) brightness(5);
+}
+
