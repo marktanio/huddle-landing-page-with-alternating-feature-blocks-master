@@ -7,6 +7,7 @@
     --veryPaleCyan:hsl(193, 100%, 96%);
     --veryDarkCyan:hsl(192, 100%, 9%);
     --grayishGray:hsl(208, 11%, 55%);
+    --filterForceWhite: brightness(0) invert(1);
 }
 
 *{
@@ -199,7 +200,8 @@ footer{
 }
 
 footer > figure > img{
-    filter: invert(1) brightness(5);
+    filter: var(--filterForceWhite);
+    margin-bottom: 20px;
 }
 
 .soc-med{
@@ -208,6 +210,22 @@ footer > figure > img{
 .soc-med img{
     width:50px;
     height:auto;
-    filter: invert(1) brightness(5);
+    filter: var(--filterForceWhite);
 }
 
+.footer-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.contact-details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width:450px;
+    width:100%;
+}
