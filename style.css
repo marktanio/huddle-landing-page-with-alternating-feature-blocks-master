@@ -264,5 +264,14 @@ li a {
   a {
     text-decoration: none;
     font-size: 20px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Open Sans",sans-serif;
+  }
+
+  .soc-med > figure >img{
+    width:30px;
+    height:auto;
+  }
+
+  .soc-med > figure {
+    margin:0 5px;
   }
