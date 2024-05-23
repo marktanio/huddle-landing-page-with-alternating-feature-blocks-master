@@ -32,7 +32,7 @@ body{
     justify-content: center;
 }
 
-main{
+main {
     background-image: url('images/bg-hero-desktop.svg');
     background-size: cover;
     background-position: center;
@@ -42,6 +42,8 @@ main{
     justify-content: center;
     align-items: center;
     min-height:750px;
+    max-width: 1920px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -174,7 +176,7 @@ aside {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+  
 aside > button{
     background-color: var(--pink);
     border-radius: 50px;
@@ -187,19 +189,26 @@ aside > button{
     margin:20px 0;
 }
 
-footer{
+footer {
     background-color: var(--veryDarkCyan);
     position:relative;
     width:100%;
     display:flex;
     color:white;
-    flex-direction: column;
     min-height:500px;
     justify-content: center;
     padding:20px;
+    max-width: 1920px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
-footer > figure > img{
+.container-footer{
+    max-width:1440px;
+    width:100%;
+}
+
+.footer-logo{
     filter: var(--filterForceWhite);
     margin-bottom: 20px;
 }
@@ -222,10 +231,38 @@ footer > figure > img{
     box-sizing: border-box;
 }
 
-.contact-details{
+.contact-details {
     display: flex;
-    justify-content:center;
-    align-items: center;
     max-width:450px;
     width:100%;
+    margin-bottom: 20px;
 }
+
+.contact-details figure {
+    margin-right: 30px;
+  }
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+li a:visited {
+    color:var(--dark-grayish-blue);
+}
+
+li a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  li {
+    margin: 5px 67px 5px 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+  }
